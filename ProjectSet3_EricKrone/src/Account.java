@@ -22,12 +22,12 @@ public class Account {
 
 	}
 	
-	public Account(int id, double balance, double annualInterestRate){
+	public Account(int id, double balance){
 		this.id = id;
 		this.balance = balance;
-		this.annualInterestRate = annualInterestRate/100;
 		
 	}
+	
 	
 	public int getId(){
 		return this.id;
@@ -35,6 +35,10 @@ public class Account {
 	
 	public double getBalance(){
 		return this.balance;
+	}
+	
+	public void setAnnualInterestRate(double rate){
+		this.annualInterestRate = rate/100;
 	}
 	
 	public double getAnnualInterestRate(){

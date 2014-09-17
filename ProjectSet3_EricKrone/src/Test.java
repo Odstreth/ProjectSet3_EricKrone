@@ -2,7 +2,8 @@
 public class Test {
 
 	public static void main(String[] args) {
-		Account test = new Account(1122, 20000, 4.5);
+		Account test = new Account(1122, 20000);
+		test.setAnnualInterestRate(4.5);
 		try{
 			test.withdraw(2500);
 		}
