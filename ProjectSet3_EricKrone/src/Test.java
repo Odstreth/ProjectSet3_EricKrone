@@ -11,7 +11,7 @@ public class Test {
 		}
 		test.deposit(3000);
 		System.out.println("The balance is: " + test.getBalance());
-		System.out.println("The monthy interest rate is: " + test.getMonthlyInterestRate());
+		System.out.println("The monthly interest rate is: " + test.getMonthlyInterestRate());
 		System.out.println("The account was created on: " + test.getDateCreated());
 		
 		try{
