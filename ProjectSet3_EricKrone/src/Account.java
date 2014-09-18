@@ -54,7 +54,7 @@ public class Account {
 	}
 	
 	public void withdraw(double amount)throws InsufficientFundsException{
-		if(balance <= amount){
+		if(balance < amount){
 			throw new InsufficientFundsException(amount-balance);	
 		}
 		else{
